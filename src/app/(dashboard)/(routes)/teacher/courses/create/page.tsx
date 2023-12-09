@@ -23,15 +23,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-type Props = {};
-
 const formSchema = z.object({
   title: z.string().min(1, {
     message: "Title is required",
   }),
 });
 
-const CreateCourse = (props: Props) => {
+const CreateCourse = () => {
   const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
