@@ -7,10 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-export function ButtonDemo() {
-  return <Button>Button</Button>;
-}
-
 import {
   Form,
   FormControl,
